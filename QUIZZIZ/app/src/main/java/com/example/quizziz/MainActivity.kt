@@ -1,6 +1,7 @@
 package com.example.quizziz
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val ediTextName: EditText = findViewById(R.id.edit_text_name)
         val btnStart: Button = findViewById(R.id.button_id)
+        Log.d("mylog", "Przed setOnClickListener")
 
         btnStart.setOnClickListener {
             Log.i("mylog", "Ok")
@@ -23,6 +25,9 @@ class MainActivity : AppCompatActivity() {
                 Log.i("mylog", "podaj imię")
             } else {
                 Log.i("mylog", "Ok")
+                val intent = Intent(this, QuizzQuestionsAcivity::class.java)
+                startActivity(intent)
+                finish() // zamknij MainActivity
             }
         }
     }

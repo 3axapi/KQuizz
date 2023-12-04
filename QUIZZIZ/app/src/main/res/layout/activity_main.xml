@@ -60,22 +60,26 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp">
-                <!--style="@style/Widget.MaterialComponents.TextInputLayout"-->
+                android:layout_margin="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/edit_text_name"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                android:text="@string/start"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_text_name"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:hint="IMIĘ NAZWISKO"
+                    android:textColorHint="#123abc"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/button_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/button"/>
+                android:layout_marginTop="16dp"
+                android:text="@string/start"
+                android:textSize="20sp"/>
 
-        </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
