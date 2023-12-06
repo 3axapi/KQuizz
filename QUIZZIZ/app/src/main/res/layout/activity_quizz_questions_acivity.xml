@@ -63,10 +63,57 @@
             android:layout_margin="10dp"
             android:layout_gravity="center"
             android:padding="15dp"
-            android:textColor="#7a8089"
-            android:textSize="10sp"
+            android:textColor="#E10140"
+            android:text="Czewony Dragon"
+            android:textSize="15sp"
             android:background="@drawable/default_option_border_bg"
             />
+
+        <TextView
+            android:id="@+id/textview_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:textColor="#E10140"
+            android:text="Skacząca Sosna"
+            android:textSize="15sp"
+            android:background="@drawable/default_option_border_bg"
+            />
+
+        <TextView
+            android:id="@+id/textview_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:textColor="#E10140"
+            android:text="Brzozowa Burza"
+            android:textSize="15sp"
+            android:background="@drawable/default_option_border_bg"
+            />
+
+        <TextView
+            android:id="@+id/textview_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:textColor="#E10140"
+            android:text="Dębowy Dąb"
+            android:textSize="15sp"
+            android:background="@drawable/default_option_border_bg"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zatwierdź"
+            android:textSize="20sp"
+            android:backgroundTint="#70a0a0" />
 
     </LinearLayout>
 
