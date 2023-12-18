@@ -80,6 +80,14 @@ class QuizzQuestionsAcivity : AppCompatActivity() , View.OnClickListener {
         }
     }
 
+    private fun answerView (answer: Int, drawableView: Int) {
+        when (answer) {
+            1 -> {
+                textViewOptionOne?.background = ContextCompact.getDrawable(this, drawableView)
+            }
+        }
+    }
+
     override fun onClick(v: View?) {
         TODO("Not yet implemented")
     }
